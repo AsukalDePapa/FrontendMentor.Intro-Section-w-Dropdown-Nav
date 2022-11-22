@@ -6,10 +6,29 @@ footer {
 }
 
 .attribution { 
-    font-size: 11px; 
+    font-size: f.rem(15); 
     text-align: center; 
+    color: var(--medium-gray);
 }
 
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: var(--almost-black); 
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin-inline: auto;
+        width: 0;
+        height: 2px;
+        background-color: var(--almost-black);
+        transition: width .3s ease-in-out;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
 }

@@ -16,7 +16,7 @@ header {
 
 nav {
     // sdfs
-    transform: translateX(200%);
+    transform: translateX(300%);
     position: absolute;
     right: 0;
     top: 0;
@@ -27,15 +27,11 @@ nav {
     transition: transform .3s ease-in;
 
     .close-menu {
-        width: 100%;
-
-        img {
-            margin-left: auto;
-        }
+        float: right;
     }
 
     & > ul {
-        padding-block: f.rem(32);
+        padding-block: f.rem(64);
         display: flex;
         flex-direction: column;
         gap: f.rem(16);

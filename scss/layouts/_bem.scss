@@ -1,2 +1,31 @@
 @use '../utils/breakpoints' as bp;
 @use '../utils/functions' as f;
+
+main {
+    display: grid;
+    place-content: center;
+    grid-template-areas: 
+        'img-container'
+        'head'
+        'client';
+
+    @include bp.breakpointMin(medium-screen) {
+        // grid-template-columns: 50% 50%;
+        grid-template-rows: 2fr .5fr;
+        grid-template-areas: 
+            'head img-container'
+            'client img-container';
+    }
+}
+
+.img-container {
+    grid-area: img-container;
+}
+
+section.head {
+    grid-area: head;
+}
+
+.client {
+    grid-area: client;
+}
