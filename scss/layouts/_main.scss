@@ -17,6 +17,7 @@ main {
 
     @include bp.breakpointMin(large-screen) {
         flex-direction: row-reverse;
+        padding-inline: 5%;
     }
 }
 

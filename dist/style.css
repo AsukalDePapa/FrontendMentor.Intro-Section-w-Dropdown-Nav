@@ -348,6 +348,7 @@ main {
 @media (min-width: 57.5em) {
   main {
     flex-direction: row-reverse;
+    padding-inline: 5%;
   }
 }
 
