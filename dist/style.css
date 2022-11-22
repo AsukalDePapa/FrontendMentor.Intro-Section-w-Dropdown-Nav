@@ -421,6 +421,9 @@ section.head button:hover a {
     justify-content: start;
     gap: 4rem;
   }
+  .client img {
+    width: 80px;
+  }
 }
 
 footer {
