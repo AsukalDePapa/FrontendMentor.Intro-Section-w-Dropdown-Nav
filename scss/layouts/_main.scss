@@ -1,0 +1,11 @@
+@use '../utils/breakpoints' as bp;
+@use '../utils/functions' as f;
+
+
+body {
+    background-color: var(--bg-color);
+
+    @include bp.breakpointMin(medium-screen) {
+        --bg-color: --almond-white;
+    }
+}
