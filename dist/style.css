@@ -92,6 +92,7 @@ nav {
   position: absolute;
   right: 0;
   top: 0;
+  z-index: 10;
   width: 65%;
   height: 100vh;
   background-color: var(--almond-white);
@@ -333,7 +334,7 @@ nav > ul ul li a img {
 body {
   background-color: var(--bg-color);
 }
-@media (min-width: 48.75em) {
+@media (min-width: 57.5em) {
   body {
     --bg-color: hsl(0, 0%, 98%);
   }
@@ -344,14 +345,10 @@ main {
   width: min(100%, 84.375rem);
   margin-bottom: 6.25rem;
 }
-@media (min-width: 48.75em) {
+@media (min-width: 57.5em) {
   main {
     flex-direction: row-reverse;
   }
-}
-
-.img-container {
-  transform: translateX(-100px);
 }
 
 section.head {
@@ -364,7 +361,7 @@ section.head h1 {
   margin-bottom: 1rem;
 }
 section.head p {
-  color: var(--medium-gray);
+  color: var(--large-gray);
   margin-bottom: 2rem;
 }
 section.head button {
@@ -384,7 +381,7 @@ section.head button:hover a {
   color: var(--almost-black);
   font-weight: 700;
 }
-@media (min-width: 48.75em) {
+@media (min-width: 57.5em) {
   section.head {
     text-align: left;
     width: min(100%, 28.125rem);
@@ -415,7 +412,7 @@ section.head button:hover a {
 .client img {
   width: 60px;
 }
-@media (min-width: 48.75em) {
+@media (min-width: 57.5em) {
   .client {
     padding: 1rem;
     justify-content: start;
@@ -462,7 +459,7 @@ main {
   place-content: center;
   grid-template-areas: "img-container" "head" "client";
 }
-@media (min-width: 48.75em) {
+@media (min-width: 57.5em) {
   main {
     grid-template-rows: 2fr 0.5fr;
     grid-template-areas: "head img-container" "client img-container";

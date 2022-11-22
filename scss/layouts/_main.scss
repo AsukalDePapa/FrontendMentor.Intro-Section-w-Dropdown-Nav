@@ -5,7 +5,7 @@
 body {
     background-color: var(--bg-color);
 
-    @include bp.breakpointMin(medium-screen) {
+    @include bp.breakpointMin(large-screen) {
         --bg-color: hsl(0, 0%, 98%);
     }
 }
@@ -15,14 +15,9 @@ main {
     width: min(100%, f.rem(1350));
     margin-bottom: f.rem(100);
 
-    @include bp.breakpointMin(medium-screen) {
+    @include bp.breakpointMin(large-screen) {
         flex-direction: row-reverse;
     }
-}
-
-.img-container {
-    // width: min(100%, f.rem(1000));
-    transform: translateX(-100px);
 }
 
 section.head {
@@ -36,7 +31,7 @@ section.head {
     }
 
     p {
-        color: var(--medium-gray);
+        color: var(--large-gray);
         margin-bottom: f.rem(32);
     }
 
@@ -61,7 +56,7 @@ section.head {
         }
     }
 
-    @include bp.breakpointMin(medium-screen) {
+    @include bp.breakpointMin(large-screen) {
         text-align: left;
         width: min(100%, f.rem(450));
         display: flex;
@@ -95,7 +90,7 @@ section.head {
         width: 60px;
     }
 
-    @include bp.breakpointMin(medium-screen) {
+    @include bp.breakpointMin(large-screen) {
         padding: f.rem(16);
         justify-content: start;
         gap: f.rem(64);

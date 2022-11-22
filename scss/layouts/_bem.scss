@@ -9,7 +9,7 @@ main {
         'head'
         'client';
 
-    @include bp.breakpointMin(medium-screen) {
+    @include bp.breakpointMin(large-screen) {
         // grid-template-columns: 50% 50%;
         grid-template-rows: 2fr .5fr;
         grid-template-areas: 
